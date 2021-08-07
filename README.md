@@ -22,3 +22,12 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Changes made to the base Lumen install for this evaluation
+- Installed laravel/sail via composer
+- Added SailServiceProvider to bootstrap/app.php
+- Turned on Facades/Eloquent via bootstrap/app.php
+- Enabled auth middleware and turned on core ServiceProviders via bootstrap/app.php
+- Installed irazasyed/larasupport to enable the helper functions used by laravel/sail
+- Installed mlntn/lumen-artisan-serve to enable the artisan:serve console command used by laravel/sail
+- Edited README.md for review
