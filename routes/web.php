@@ -16,3 +16,12 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+
+// User Opt-In API Routes
+$router->get('users', 'UserOptInController@index');
+$router->get('users/{user}', 'UserOptInController@show');
+$router->post('users', 'UserOptInController@store');
+$router->put('users/{user}', 'UserOptInController@update');
+$router->patch('users/{user}', 'UserOptInController@update');
+$router->delete('users/{user}', 'UserOptInController@destroy');
